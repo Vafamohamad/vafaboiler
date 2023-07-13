@@ -33,7 +33,7 @@ class PasswordExpirationTest extends TestCase
 
         $response->assertSessionHas('flash_warning', __('Your password has expired. We require you to change your password every :days days for security purposes.', [
             'days' => config('boilerplate.access.user.password_expires_days'),
-        ]));
+       
     }
 
     /** @test */
